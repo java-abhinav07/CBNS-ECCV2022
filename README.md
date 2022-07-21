@@ -61,6 +61,16 @@ Results for the experiment will be collected in the provided log-directory (eg: 
 
 The resulting point clouds can be visualized using `results/plot_pointclouds.ipynb` with appropriate paths to trained model files. 
 
+If you use our work in your project kindly cite:<br>
+```
+@article{chopra2022learning,
+  title={Learning to Censor by Noisy Sampling},
+  author={Chopra, Ayush and Java, Abhinav and Singh, Abhishek and Sharma, Vivek and Raskar, Ramesh},
+  journal={arXiv preprint arXiv:2203.12192},
+  year={2022}
+}
+```
+
 ## Acknowledgment
 This code builds upon the code provided in <a href="https://github.com/itailang/SampleNet">Samplenet</a>, <a href="https://github.com/hmgoforth/PointNetLK">PointNetLK</a>, <a href="https://github.com/erikwijmans/Pointnet2_PyTorch">Pointnet2_PyTorch</a> and <a href="https://github.com/unlimblue/KNN_CUDA">KNN_CUDA</a>. We thank the authors for sharing their code.
 
