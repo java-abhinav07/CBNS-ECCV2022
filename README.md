@@ -42,20 +42,20 @@ Kindly change the read/write paths in the notebook for proper execution.
 For a quick start please use the scripts provided in `scripts/` directory. Run all scripts from the root directory of this repository. Note that a temporary `--base-name` is added to all scripts to maintain anonymity and needs be modified before running the scripts (parent directory containing annotation file and npy data after preprocessing).
 
 1. Train base pointnet classifiers + finetune samplers:
-   ` bash ./facescape/scripts/baseline/gender.sh `
-   ` bash ./facescape/scripts/baseline/exp.sh `
+   ` bash ./facescape/scripts/baseline/gender.sh ` <br>
+   ` bash ./facescape/scripts/baseline/exp.sh ` <br>
 
 2. Train with proxy attacker model for privacy + finetune worst case attacker: 
 	a. <b>CBSN (Our Method)</b>
-   		`bash ./facescape/scripts/cbns/exp_gender_best.sh` 
+   		`bash ./facescape/scripts/cbns/exp_gender_best.sh` <br>
 	b. Line Cloud
-		`bash ./facescape/scripts/line/exp_gender_best.sh` 
+		`bash ./facescape/scripts/line/exp_gender_best.sh` <br>
 	c. AS-AN
-		`bash ./facescape/scripts/as_an/exp_gender_best.sh` 
+		`bash ./facescape/scripts/as_an/exp_gender_best.sh` <br>
 	d. AS-ON
-		`bash ./facescape/scripts/as_on/exp_gender_best.sh` 
+		`bash ./facescape/scripts/as_on/exp_gender_best.sh` <br>
 	e. OS-AN
-		`bash ./facescape/scripts/os_an/exp_gender_best.sh`
+		`bash ./facescape/scripts/os_an/exp_gender_best.sh` <br>
 
 Results for the experiment will be collected in the provided log-directory (eg: `./facescape/log/cbns/finetune/test.log`). In order to reproduce the normalized hypervolume, a sweep over the hyperparameters to regulate privacy-utility is required which may take a long time to compute. For those interested, the parameters can easily be regulated by modifying the arguments the bash scripts (`./facescape/scripts/`). 
 
